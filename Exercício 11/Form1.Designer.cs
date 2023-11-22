@@ -34,6 +34,7 @@
             mudarTipoDeLetraECorToolStripMenuItem = new ToolStripMenuItem();
             corToolStripMenuItem = new ToolStripMenuItem();
             letraToolStripMenuItem = new ToolStripMenuItem();
+            button1 = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -74,16 +75,27 @@
             // corToolStripMenuItem
             // 
             corToolStripMenuItem.Name = "corToolStripMenuItem";
-            corToolStripMenuItem.Size = new Size(180, 22);
+            corToolStripMenuItem.Size = new Size(100, 22);
             corToolStripMenuItem.Text = "Cor";
             corToolStripMenuItem.Click += corToolStripMenuItem_Click;
             // 
             // letraToolStripMenuItem
             // 
             letraToolStripMenuItem.Name = "letraToolStripMenuItem";
-            letraToolStripMenuItem.Size = new Size(180, 22);
+            letraToolStripMenuItem.Size = new Size(100, 22);
             letraToolStripMenuItem.Text = "Letra";
             letraToolStripMenuItem.Click += letraToolStripMenuItem_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ControlDark;
+            button1.Location = new Point(577, 309);
+            button1.Name = "button1";
+            button1.Size = new Size(119, 72);
+            button1.TabIndex = 2;
+            button1.Text = "Página 2 ";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
@@ -91,11 +103,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -110,5 +124,6 @@
         private ToolStripMenuItem mudarTipoDeLetraECorToolStripMenuItem;
         private ToolStripMenuItem corToolStripMenuItem;
         private ToolStripMenuItem letraToolStripMenuItem;
+        private Button button1;
     }
 }

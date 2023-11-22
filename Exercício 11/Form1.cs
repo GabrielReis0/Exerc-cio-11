@@ -31,5 +31,17 @@ namespace Exercício_11
                 label1.Font = fontDialog.Font;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 Form2 = new Form2();
+            Form2.Show();
+            this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
